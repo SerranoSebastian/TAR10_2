@@ -1,49 +1,24 @@
+/* Estilos generales (pantallas grandes) */
 body {
+  background-color: white;
+  color: black;
+  text-align: left;
   font-family: Arial, sans-serif;
-  background-color: #333; /* Fondo oscuro para móviles */
-  color: white; /* Texto blanco */
-  text-align: center;
-  padding: 20px;
-  margin: 0;
-  transition: all 0.3s ease;
 }
 
 h1 {
-  font-size: 24px;
-  margin-bottom: 15px;
+  font-size: 36px;
 }
 
-p {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-@media (min-width: 600px) {
+/* Estilos para pantallas pequeñas (máximo 600px) */
+@media screen and (max-width: 600px) {
   body {
-    background-color: #f0f0f0; 
-    color: #333; 
+    background-color: #222; /* fondo oscuro */
+    color: white;
+    text-align: center;
   }
-  
-  h1 {
-    font-size: 28px;
-  }
-}
 
-@media (min-width: 769px) {
-  body {
-    background-color: #f0f0f0;
-    color: #000; 
-    text-align: left;
-    padding: 40px;
-  }
-  
   h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  p {
-    font-size: 18px;
-    max-width: 800px;
+    font-size: 24px;
   }
 }
